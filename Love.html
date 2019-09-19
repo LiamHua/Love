@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LOVE</title>
+	<style type="text/css">
+		body{
+			background-color:#000;
+		}
+		.Love{
+			width:206px;
+			height:300px;
+			background-color: ;
+			margin-top: 100px;
+			margin-left: auto;
+			margin-right: auto;
+			animation: move 1s infinite alternate;
+		}
+		@keyframes move{
+			100%{
+				transform:scale(1.5);
+			}
+		}
+		.Love div{
+			float:left;
+			width:150px;
+			height:228px;
+			background-color: #F7060A;
+			border-radius:200px 200px 0 0 ;
+			box-shadow: 0 0 10px #F7060A;
+			animation: shadow 1s infinite alternate;
+		}
+		@keyframes shadow{
+			100%{
+				box-shadow: 0 0 300px #F7060A;
+			}
+		}
+		.Love .left{
+			transform: rotate(-45deg);
+			
+		}
+		.Love .right{
+			transform: rotate(45deg);
+			margin-left:-95px;
+		}
+		p{
+			color:#F7060A; 
+			font-size:100px;
+			text-align:center;
+		}
+	</style>
+	<bgsound src="https://www.xiami.com/song/1795263120?spm=0.0.0.0.zJ1tWF&from=search_popup_song" loop="-1">`
+</head>
+
+<body>
+	<div class="Love">
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+	<p>因为刚好遇见你</p>
+</body>
+</html>
